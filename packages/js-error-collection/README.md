@@ -1,60 +1,44 @@
-# micro-frontend-template
+# js-error-collection
 
-**English** | [中文](./README-zh_CN.md)
-
-> A minimal micro-frontend-template with Element-Plus UI & axios & permission control & lint & hook
-
-A new  generation micro-frontend-template  construct  using  vue3(setup-script)+vite2+element-plus ，It's fast!
-
-Use eslint+prettier+gitHooks format and verification code to improve code standardization and development efficiency
-
-Vite need Node.js >= 12.0.0。
+**中文** | [English](./README.md)
 
 
-## Build Setup
+
+> It is used to collect various logs during the running process of js, so as to find online problems in time and improve the coding quality
+
+
+
+## Install
 
 ```bash
-# clone the project
-git clone https://github.com/jzfai/micro-frontend-template.git
-
-# enter the project directory
-cd micro-frontend-template
-
-# pnpm address https://pnpm.io/zh/motivation
-# install dependency(Recommend use pnpm)
-# you can  use "npm -g i pnpm" to install pnpm 
-pnpm i
-
-# develop
-pnpm run hostall:dev
+pnpm i js-error-collection -S
 ```
 
-using the browser to open  http://localhost:5012/vue3-micro-frontend/
 
-## Build
+## Using
 
-```bash
-# build for production environment
-pnpm run  hostall:preview
+```javascript
+####main.ts
+import { jsErrorCollection } from 'js-error-collection'
+
+jsErrorCollection({runtimeError:true, rejectError:true, consoleError:false}, (errLog) => {
+console.log(errLog)
+//send ajax req to save the error
+})
+
+runtimeError:Whether to collect runtime errors and resource loading errors，defalut：true
+rejectError: Whether to collect reject errors，  defalut：true
+consoleError:Whether to collect errors printed by console.error， defalut：false
 ```
 
-## Others
 
-```bash
-# preview the release environment effect
-pnpm run hostall:preview-offline
 
-# code format check
-pnpm run lint
-
-```
-
-## Discussion and Communication
+## discussion and exchange
 [WeChat group](http://8.135.1.141/file/images/wx-groud.png)
-
-## License
 
 [MIT](https://github.com/jzfai/micro-frontend-template/blob/master/LICENSE) license.
 
 Copyright (c) 2022-present  kuanghua
+
+
 

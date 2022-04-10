@@ -1,12 +1,12 @@
 {
-  "name": "@xiongmaoge/js-error-collection",
-  "version": "1.0.1",
+  "name": "js-error-collection",
+  "version": "1.0.3",
   "private": false,
   "license": "ISC",
   "author": "kuanghua(869653722@qq.com)",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "npm publish"
   },
   "publishConfig": {
     "access": "public"

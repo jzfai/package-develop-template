@@ -2,6 +2,7 @@
   "name": "vue3-admin-ts",
   "version": "1.5.0",
   "license": "ISC",
+  "private": true,
   "author": "kuanghua(869653722@qq.com)",
   "scripts": {
     "dev": "vite --mode serve-dev --host",

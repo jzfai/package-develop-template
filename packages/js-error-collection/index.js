@@ -1,10 +1,9 @@
-import { ObjTy } from '~/common'
 export const jsErrorCollection = ({ runtimeError = true, rejectError = true, consoleError = false }, callback) => {
   if (runtimeError) {
     //JS运行时错误和资源加载错误
     window.addEventListener(
       'error',
-      ({ error, target }: ObjTy) => {
+      ({ error, target }) => {
         if (target.outerHTML) {
           //img error collection
           const errLog = `${JSON.stringify(target.outerHTML)}`
