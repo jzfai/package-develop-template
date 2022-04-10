@@ -4,7 +4,7 @@
 
 
 
-> Provide npm package development template, use pnpm workspace to manage workspace
+> 提供npm package 包开发模版，使用pnpm workspace管理工作空间
 
 
 ## Build Setup
@@ -28,12 +28,12 @@ pnpm run play:dev
 
 ```tree
 ├
-├── doc                       vitePress for developing package documentation
+├── doc                       开发package的文档说明用的vitePress
 ├
-├── play                      For the package package, do real-time effect display
+├── play                      对package包，做实时效果展示
 ├
-├── packages                  The packages that need to be developed are placed here
-├   ├── js-error-collection   The package collected by js error has been deployed online
+├── packages                  需要开发的包，放在这里
+├   ├── js-error-collection   js错误收集的包，已部署上线
 
 ```
 
