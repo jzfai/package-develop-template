@@ -1,10 +1,10 @@
 {
-  "name": "js-error-collection",
-  "version": "1.0.4",
+  "name": "js-errorlog-collection",
+  "version": "1.0.5",
   "private": false,
   "license": "ISC",
   "author": "kuanghua(869653722@qq.com)",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "pub": "npm publish"
   },
