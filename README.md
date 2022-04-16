@@ -1,6 +1,6 @@
 # package-develop-template
 
-**中文** | [English](./README.md)
+**English** | [中文](./README-zh_CN.md)
 
 
 
@@ -36,7 +36,6 @@ pnpm run play:dev
 ├   ├── js-error-collection   The package collected by js error has been deployed online
 
 ```
-
 
 
 ## Discussion and Communication

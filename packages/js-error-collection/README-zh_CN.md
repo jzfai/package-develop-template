@@ -7,6 +7,10 @@
 > 用于收集js运行过程中各种日志的收集，便于及时发现线上问题，提高编码质量
 
 
+###Github Address
+
+https://github.com/jzfai/pakage-develop-template
+
 
 ## Install
 

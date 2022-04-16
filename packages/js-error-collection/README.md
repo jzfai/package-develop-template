@@ -1,6 +1,6 @@
 # js-error-collection
 
-**中文** | [English](./README.md)
+**English** | [中文](./README-zh_CN.md)
 
 
 
@@ -14,6 +14,9 @@
 pnpm i js-error-collection -S
 ```
 
+###Github Address
+
+https://github.com/jzfai/pakage-develop-template
 
 ## Using
 
