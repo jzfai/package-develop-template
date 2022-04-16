@@ -14,7 +14,7 @@
 pnpm i js-error-collection -S
 ```
 
-###Github Address
+## Github Address
 
 https://github.com/jzfai/pakage-develop-template
 
@@ -29,12 +29,14 @@ console.log(errLog)
 //send ajax req to save the error
 })
 
+```
+### props instruction
+
+```javascript
 runtimeError:Whether to collect runtime errors and resource loading errors，defalut：true
 rejectError: Whether to collect reject errors，  defalut：true
 consoleError:Whether to collect errors printed by console.error， defalut：false
 ```
-
-
 
 ## discussion and exchange
 [WeChat group](http://8.135.1.141/file/images/wx-groud.png)
