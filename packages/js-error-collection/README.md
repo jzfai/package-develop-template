@@ -1,6 +1,6 @@
 # js-error-collection
 
-**English** | [中文](./README-zh_CN.md)
+**English** | [中文](https://github.com/jzfai/package-develop-template/blob/master/packages/js-error-collection/README-zh_CN.md)
 
 
 
@@ -16,7 +16,7 @@ pnpm i js-error-collection -S
 
 ## Github Address
 
-https://github.com/jzfai/pakage-develop-template
+https://github.com/jzfai/package-develop-template
 
 ## Using
 
@@ -36,6 +36,8 @@ console.log(errLog)
 runtimeError:Whether to collect runtime errors and resource loading errors，defalut：true
 rejectError: Whether to collect reject errors，  defalut：true
 consoleError:Whether to collect errors printed by console.error， defalut：false
+unhandledCodeArr: Do not capture status codes， defalut [403,401]
+unhandledStringArr: Do not capture string， defalut ["cancel"] 
 ```
 
 ## discussion and exchange

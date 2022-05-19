@@ -1,6 +1,6 @@
 # package-develop-template
 
-**中文** | [English](./README.md)
+**中文** 
 
 
 
@@ -11,7 +11,7 @@
 
 ```bash
 # clone the project
-git clone https://github.com/jzfai/package-develop-template.git
+git clone https://github.com/jzfai/package-develop-template
 
 # enter the project directory
 cd package-develop-template

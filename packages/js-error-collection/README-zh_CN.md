@@ -1,6 +1,6 @@
 # js-error-collection
 
-**中文** | [English](./README.md)
+**中文**
 
 
 
@@ -38,6 +38,8 @@ console.log(errLog)
 runtimeError:是否收集运行期错误和资源加载错误，默认：true
 rejectError: 是否收集reject错误，  默认：true
 consoleError:是否收集console.error打印的错误， 默认：false
+unhandledCodeArr: rejectError不捕捉状态吗， 默认 [403,401]
+unhandledStringArr: rejectError不捕捉String， 默认 ["cancel"] 
 ```
 
 

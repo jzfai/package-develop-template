@@ -1,4 +1,7 @@
-export const jsErrorCollection = ({ runtimeError = true, rejectError = true, consoleError = false }, callback) => {
+export const jsErrorCollection = (
+  { runtimeError = true, rejectError = true, consoleError = false, unhandledCodeArr = [], unhandledStringArr = [] },
+  callback
+) => {
   if (runtimeError) {
     //JS运行时错误和资源加载错误
     window.addEventListener(
@@ -24,17 +27,31 @@ export const jsErrorCollection = ({ runtimeError = true, rejectError = true, con
       let errLog = ''
       if (typeof reason === 'string') {
         errLog = reason
+      } else if (reason instanceof Object) {
+        errLog = JSON.stringify(reason)
       } else {
-        errLog = `${reason?.stack?.substr(0, 300)}`
+        errLog = '未知类型'
       }
-      //未授权和取消不捕捉
       //此处可添加不捕捉状态码
-      const unhandledCode = '403, 401'
+      const unhandledCode = '403,401'
       //此处可添加不捕捉string
       const unhandledString = 'cancel'
-      if (!unhandledCode.includes(reason?.code) && !reason.includes(unhandledString)) {
-        callback(errLog)
+
+      for (let string of unhandledCode.split(',').concat(unhandledCodeArr)) {
+        if (errLog.includes(string)) {
+          return
+        }
       }
+      for (let string of unhandledString.split(',').concat(unhandledStringArr)) {
+        if (errLog.includes(string)) {
+          return
+        }
+      }
+      //延时返回
+      let time = setTimeout(() => {
+        clearInterval(time)
+        callback(errLog)
+      }, 200)
     })
   }
   if (consoleError) {

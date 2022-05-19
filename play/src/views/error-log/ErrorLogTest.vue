@@ -22,13 +22,15 @@
     <el-button type="primary" @click="errorLogImg">imageLoadError</el-button>
     <!--image load error demo-->
     <img v-if="imgShow" src="http://img.png" />
+
+    <el-button @click="testAxios">testAxios</el-button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { jsErrorCollection } from '@xiongmaoge/js-error-collection'
+import { jsErrorCollection } from 'js-error-collection'
 jsErrorCollection({}, (errLog) => {
-  console.log(1111, errLog)
+  console.log(errLog)
 })
 const appStore = useAppStore()
 let settings = computed(() => {
@@ -47,6 +49,11 @@ let flag = ref(null)
 
 const consoleErrorFun = () => {
   console.error('console.error')
+}
+
+import axios from 'axios'
+const testAxios = () => {
+  axios.get('http://8.135.1.141/micro-service-api/integration-front/user/loginOut1')
 }
 
 const normalError = () => {

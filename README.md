@@ -1,6 +1,6 @@
 # package-develop-template
 
-**English** | [中文](./README-zh_CN.md)
+**English** | [中文](https://github.com/jzfai/package-develop-template/blob/master/README-zh_CN.md)
 
 
 
