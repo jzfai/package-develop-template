@@ -1,14 +1,10 @@
 <template>
-  <div class="scroll-y"></div>
+  <div class="scroll-y">
+    <pd-button></pd-button>
+    <div class="mt-2">
+      <pd-input></pd-input>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
-
-<style lang="scss" scoped>
-.dashboard {
-  &-text {
-    font-size: 30px;
-    line-height: 46px;
-  }
-}
-</style>

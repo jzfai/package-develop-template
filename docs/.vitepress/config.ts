@@ -11,7 +11,7 @@ import sidebarZh from './configs/zh/sidebar'
 
 export default defineConfig({
   base: '/doc',
-  title: 'Package Develop Template',
+  title: 'Package Develop',
   description: '提供企业级的包开发工具',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
   locales: {

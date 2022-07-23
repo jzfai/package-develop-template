@@ -4,5 +4,11 @@
   "private": false,
   "license": "ISC",
   "author": "kuanghua(869653722@qq.com)",
-  "main": "index.vue"
+  "main": "index.ts",
+  "scripts": {
+    "pub": "npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

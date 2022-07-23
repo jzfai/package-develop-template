@@ -4,7 +4,7 @@
   "packageManager": "pnpm@6.32.3",
   "version": "1.1.2",
   "scripts": {
-    "docs:dev": "npm run register:components && vitepress dev docs --port 3015",
+    "docs:dev": " vitepress dev docs --port 3015",
     "register:components": "vitepress-rc",
     "play:dev": "npm run dev -w play ",
     "pub:jec": "npm run pub -w js-error-collection",
@@ -36,7 +36,6 @@
     "vue-router": "4.0.14"
   },
   "devDependencies": {
-
     "@babel/eslint-parser": "7.16.3",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-typescript": "7.16.7",
