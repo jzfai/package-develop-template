@@ -1,0 +1,8 @@
+{
+  "name": "docs",
+  "version": "1.0.2",
+  "private": false,
+  "license": "ISC",
+  "author": "kuanghua(869653722@qq.com)",
+  "main": "index.js"
+}

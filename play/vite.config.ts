@@ -25,10 +25,10 @@ const prodMock = setting.openProdMock
 export default ({ command, mode }: any) => {
   return {
     /*
-     * "/vue3-admin-plus" nginx deploy folder
+     * "/package-develop-template" nginx deploy folder
      * detail to look https://vitejs.cn/config/#base
-     * how to config, such as http://8.135.1.141/vue3-admin-plus/#/dashboard
-     * "/vue3-admin-plus/" --> config to base is you need
+     * how to config, such as http://8.135.1.141/package-develop-template/#/dashboard
+     * "/package-develop-template/" --> config to base is you need
      * http://8.135.1.141 --> if you config "/" , you can visit attached  to http://8.135.1.141
      * */
     base: setting.viteBasePath,
